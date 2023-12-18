@@ -73,7 +73,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
                 int R = Convert.ToInt32(textBoxR_IME.Text);
                 int[,] array = ds.GetMatrix(n, m, n1, n2, L, R, K);
 
-                for (int i = 0; i < n; i++)
+                for (int i = 0; i < n; i+=2)
                 {
                     for (int j = 0; j < m; j++)
                     {
