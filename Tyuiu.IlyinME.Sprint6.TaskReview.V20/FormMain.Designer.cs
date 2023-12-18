@@ -109,7 +109,6 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
             this.dataGridViewIn_IME.Name = "dataGridViewIn_IME";
             this.dataGridViewIn_IME.ReadOnly = true;
             this.dataGridViewIn_IME.RowHeadersVisible = false;
-            this.dataGridViewIn_IME.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewIn_IME.Size = new System.Drawing.Size(344, 271);
             this.dataGridViewIn_IME.TabIndex = 7;
             // 
