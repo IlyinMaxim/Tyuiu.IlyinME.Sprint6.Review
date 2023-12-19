@@ -53,6 +53,10 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
                         dataGridViewIn_IME.Rows[i].Cells[j].Value = Convert.ToString(array[i, j]);
                     }
                 }
+                if (n1 >= n2 || K >= L || R < 0 || R >= n || K < 0 || K >= m || L < 0 || L >= m)
+                {
+                    MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch
             {
