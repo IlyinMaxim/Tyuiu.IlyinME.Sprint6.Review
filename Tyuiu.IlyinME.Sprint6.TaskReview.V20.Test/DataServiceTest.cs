@@ -20,7 +20,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20.Test
                                             { 2, -4, -1, 4, 2 },
                                             { 8, -64, -1, 64, 8 },
                                             { 3, -4, 2, -1, 4 } };
-            int res = ds.ResultGetMatrix(array, R, K, L);
+            int res = ds.ResultGetMatrix(array, K, L, R);
             int wait = -1;
             Assert.AreEqual(wait, res);
         }
