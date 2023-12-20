@@ -82,21 +82,21 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
             // 
             // textBoxL_IME
             // 
-            this.textBoxL_IME.Location = new System.Drawing.Point(12, 199);
+            this.textBoxL_IME.Location = new System.Drawing.Point(12, 242);
             this.textBoxL_IME.Name = "textBoxL_IME";
             this.textBoxL_IME.Size = new System.Drawing.Size(100, 20);
             this.textBoxL_IME.TabIndex = 4;
             // 
             // textBoxR_IME
             // 
-            this.textBoxR_IME.Location = new System.Drawing.Point(12, 242);
+            this.textBoxR_IME.Location = new System.Drawing.Point(12, 289);
             this.textBoxR_IME.Name = "textBoxR_IME";
             this.textBoxR_IME.Size = new System.Drawing.Size(100, 20);
             this.textBoxR_IME.TabIndex = 5;
             // 
             // textBoxK_IME
             // 
-            this.textBoxK_IME.Location = new System.Drawing.Point(12, 288);
+            this.textBoxK_IME.Location = new System.Drawing.Point(12, 199);
             this.textBoxK_IME.Name = "textBoxK_IME";
             this.textBoxK_IME.Size = new System.Drawing.Size(100, 20);
             this.textBoxK_IME.TabIndex = 6;

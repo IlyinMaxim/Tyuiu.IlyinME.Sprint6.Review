@@ -26,7 +26,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20.Lib
             return array;
         }
 
-        public int ResultGetMatrix(int[,] array, int R, int K, int L)
+        public int ResultGetMatrix(int[,] array, int K, int L, int R)
         {
             int minElement = int.MaxValue;
 
