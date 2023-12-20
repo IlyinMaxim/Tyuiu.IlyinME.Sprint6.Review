@@ -18,6 +18,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
             InitializeComponent();
         }
         DataService ds = new DataService();
+        int[,] array;
         private void buttonDone_IME_Click(object sender, EventArgs e)
         {
             try
@@ -30,7 +31,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
                 int L = Convert.ToInt32(textBoxL_IME.Text);
                 int R = Convert.ToInt32(textBoxR_IME.Text);
 
-                int[,] array = ds.GetMatrix(n, m, n1, n2, L, R, K);
+                int[,] array = ds.GetMatrix(n, m, n1, n2);
 
                 int rows = array.GetLength(0);
                 int columns = array.GetLength(1);
@@ -53,10 +54,6 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
                         dataGridViewIn_IME.Rows[i].Cells[j].Value = Convert.ToString(array[i, j]);
                     }
                 }
-                if (n1 >= n2 || K >= L || R < 0 || R >= n || K < 0 || K >= m || L < 0 || L >= m)
-                {
-                    MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
             catch
             {
@@ -75,9 +72,9 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20
                 int K = Convert.ToInt32(textBoxK_IME.Text);
                 int L = Convert.ToInt32(textBoxL_IME.Text);
                 int R = Convert.ToInt32(textBoxR_IME.Text);
-                int[,] array = ds.GetMatrix(n, m, n1, n2, L, R, K);
+                int[,] array = ds.GetMatrix(n, m, n1, n2);
 
-                for (int i = 0; i < n; i+=2)
+                for (int i = 0; i < n; i ++)
                 {
                     for (int j = 0; j < m; j++)
                     {

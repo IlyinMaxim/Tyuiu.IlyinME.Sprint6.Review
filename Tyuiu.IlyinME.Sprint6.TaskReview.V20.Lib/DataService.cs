@@ -8,7 +8,7 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20.Lib
 {
     public class DataService
     {
-        public int[,] GetMatrix(int n, int m, int n1, int n2, int K, int L, int R)
+        public int[,] GetMatrix(int n, int m, int n1, int n2)
         {
             Random rnd = new Random();
             int[,] array = new int[n, m];
@@ -19,26 +19,26 @@ namespace Tyuiu.IlyinME.Sprint6.TaskReview.V20.Lib
                     array[i, j] = rnd.Next(n1, n2);
                     if (i % 2 != 0)
                     {
-                        array[i, j] = (int)Math.Pow(array[i-1, j], 3);
+                        array[i, j] = (int)Math.Pow(array[i - 1, j], 3);
                     }
                 }
             }
-            if (n1 >= n2 || K >= L || R < 0 || R >= n || K < 0 || K >= m || L < 0 || L >= m)
-            {
-                Console.WriteLine("Некорректные входные данные!");
-            }
             return array;
         }
-            
+
         public int ResultGetMatrix(int[,] array, int R, int K, int L)
         {
-            int minElement = array[R, K];
+            int minElement = int.MaxValue;
 
-            for (int i = K; i <= L; i += 2)
+            for (int j = K; j <= L; j++)
             {
-                if (array[R, i] < minElement)
+                if (j % 2 == 0)
                 {
-                    minElement = array[R, i];
+                    if (array[R, j] < minElement)
+
+                    {
+                        minElement = array[R, j];
+                    }
                 }
             }
 
